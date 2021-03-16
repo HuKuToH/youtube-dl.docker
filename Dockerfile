@@ -1,3 +1,5 @@
+
+FROM public.ecr.aws/lambda/python:3.8
 FROM ubuntu:20.10
 
 RUN apt-get -y update && \
