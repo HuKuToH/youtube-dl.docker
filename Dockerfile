@@ -1,5 +1,3 @@
-
-FROM public.ecr.aws/lambda/python:3.8
 FROM ubuntu:20.10
 
 RUN apt-get -y update && \
@@ -13,4 +11,4 @@ RUN git clone https://github.com/HuKuToH/youtube-dl  && \
     cd .. && \
     rm -r youtube-dl
 
-ENTRYPOINT ["youtube-dl"]
+ENTRYPOINT ["youtube-dl"] 
